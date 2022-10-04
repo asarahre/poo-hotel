@@ -3,7 +3,8 @@ export class Pessoa {
   protected name: String;
 
   constructor(id: Number, name: String) {
-    (this.id = id), (this.name = name);
+    this.id = id;
+    this.name = name;
   }
 
   mostrarPessoa() {
