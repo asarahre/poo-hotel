@@ -1,4 +1,4 @@
-import { Pessoa } from "./pessoa";
+import { Pessoa } from "../pessoa";
 
 export class Funcionario extends Pessoa {
   private login: String;
@@ -11,10 +11,11 @@ export class Funcionario extends Pessoa {
   }
 
   mostrarPessoa(): void {
-    console.log(`id:${this.id}\n
-    name:${this.name}\n
-    login:${this.login}\n
-    password:*****\n
+    console.log(`\n
+    id: ${this.id}\n
+    name: ${this.name}\n
+    login: ${this.login}\n
+    password: ${this.password}\n
     `);
   }
 }
